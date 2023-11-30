@@ -1,0 +1,75 @@
+**SEQR: Android Mobile Application**
+
+
+![Alt text](<Screenshot 2023-06-06 192708.png>)
+
+
+
+SEQR is an Android application developed using Android Studios and Python, seamlessly integrated through the Chaquopy-Python SDK.
+
+The primary objective of this application is to scan open QR codes and identify any potential phishing links embedded within them.
+
+The app is designed to operate seamlessly on Android devices running version 10-Quince Tart.
+
+Utilizing Android Studios, we've crafted an intuitive front-end to facilitate user interaction. Python serves as the robust back-end component, responsible for determining the safety of URLs extracted from scanned QR codes.
+
+Upon analysis, a message box is presented to the user, providing comprehensive details such as the complete URL and a security percentage, offering insights into the safety of the detected link.
+
+*Features*
+1. QR code Scanner
+2. URL Link analyser
+3. Chatbot
+
+**Android Application: Frontend**
+Usage
+By clicking on any of the three button available on the home screen, the user will be taken to the needed branch pages.
+
+![Alt text](<Screenshot 2023-05-29 155434.png>)
+
+By opening the any three buttons, you can perform your required action.
+
+![Alt text](<Screenshot 2023-05-29 155957.png>)
+![Alt text](<Screenshot 2023-05-29 160854.png>)
+![Alt text](<Screenshot 2023-05-29 161109.png>)
+
+Once you have scanned a QR code, the result will be shown in a Dialog box.
+
+![Alt text](Picture1.jpg)
+
+The URL analyzer operates with a straightforward mechanism: simply paste any URL you wish to analyze or check, and the app will present the details in a dialog box. If no malicious URLs are detected, it will display "No Malicious Links Detected." However, if malicious links are identified, the app will provide a comprehensive list of these links for your awareness. This ensures a transparent and informative user experience regarding the safety of the submitted URL.
+
+*Disclaimer:*
+*Ensure, when pasting the url, the complete URL of the webpage is selcted and pasted, broken URLs may not be identified or may return as malicious URL.*
+
+![Alt text](<Screenshot 2023-06-06 013356.png>)
+
+The chatbot answers any question related to the SEQR app or question about QR codes or phishing attacks in general.
+
+![Alt text](<Screenshot 2023-06-06 013555-1.png>)
+
+**Python :Backend**8
+This project uses Python as its backend language due to its simplicity and ease of use. The main aim behind using Python was to create a simple program.
+
+We have identified 12 essential conditions that an URL must inherently satisfy to be designated as safe or secure. It's noteworthy that numerous malicious links fail to meet 5 or 6 of these conditions, even when impeccably crafted. Following the extraction of the URL from the QR code, it undergoes scrutiny by our Python program, which assesses it against the 12 conditions and generates a calculated percentage reflecting its level of security.
+
+
+![Alt text](<Screenshot python.png>)
+
+**Conclusion**
+At the culmination of our project, we have achieved the successful development of an application capable of recognizing QR codes, extracting their contents, and performing a comprehensive assessment. Our focus extended to identifying distinct characteristics exhibited by phishing links and understanding the tactics employed by hackers to disguise phishing links as authentic ones. Armed with this insight, we successfully created an Android application as a robust countermeasure to detect QR codes and links susceptible to malicious activities.
+
+Throughout our research journey, we gained foresight into the broad applications of QR code technology, recognizing its significance across various fields. However, our exploration extended beyond its applications; we delved into the darker realms of cybercrime, gaining an understanding of the potential threats associated with QR code technology. This dual perspective positions our project not only as a technological achievement but also as a contribution to cybersecurity awareness and defense.
+
+**Drawbacks:**
+1. *Compatibility Limitation:*
+   Our application is not compatible with Android versions earlier than Android 10. Users with older devices may encounter compatibility issues.
+
+2. *Dependency on Internet Connection:*
+   The app necessitates a reliable internet connection for optimal functionality. Users in areas with limited connectivity may experience disruptions in service.
+
+3. *Performance Variation:*
+   Phones with lower built-in RAM may experience slower response times when using the app. Improvements are needed to enhance performance on devices with resource constraints.
+
+4. *UI/UX Enhancement:*
+   The current user interface and user experience features can be enhanced. We are actively working on improving the overall design and usability to provide a more seamless and intuitive experience for our users.
+
